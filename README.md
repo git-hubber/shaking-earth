@@ -25,7 +25,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## `See it in the wild`
+### `See it in the wild`
 
 https://earthquakes-1550580777585.firebaseapp.com
 
