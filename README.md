@@ -28,3 +28,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## `See it in the wild`
 
 https://earthquakes-1550580777585.firebaseapp.com
+
+### Clone me and install me
+
+git clone https://github.com/git-hubber/shaking-earth.git
+cd shaking-earth
+npm install
+npm start

@@ -20,7 +20,7 @@ const AboutPage = () => {
         Made using React, Redux, React Router, and more...
       </h3>
       <h3 className='ui header'>
-        <a href='https://github.com'>
+        <a href='https://github.com/git-hubber/shaking-earth'>
           <i className='linkify icon' />
           Code on Github
         </a>
