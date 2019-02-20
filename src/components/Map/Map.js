@@ -51,7 +51,7 @@ class Map extends Component {
         </GoogleMap>
         <div>
           <i className='question circle outline icon' />
-          Zoom in or pan to filter the earthquakes
+          Zoom in or pan the map to filter the earthquakes
         </div>
         <div>
           <i className='question circle outline icon' />
