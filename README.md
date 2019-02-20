@@ -31,7 +31,7 @@ https://earthquakes-1550580777585.firebaseapp.com
 
 ### `Clone me and install me`
 
-git clone https://github.com/git-hubber/shaking-earth.git
-cd shaking-earth
-npm install
-npm start
+git clone https://github.com/git-hubber/shaking-earth.git<br>
+cd shaking-earth<br>
+npm install<br>
+npm start<br>
