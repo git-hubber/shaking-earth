@@ -7,9 +7,9 @@ export function* watchEarthquakes() {
   /**
    * takeEvery - listen for certain action types -> do something when they occur:
    *
-   * 'INITIATE_FETCH_EARTHQUAKES' -> fetchEarthquakesSaga
+   * INITIATE_FETCH_EARTHQUAKES -> fetchEarthquakesSaga
    * OR
-   * 'INITIATE_FILTER_EARTHQUAKES' -> filterEarthquakesSaga
+   * INITIATE_FILTER_EARTHQUAKES -> filterEarthquakesSaga
    *  */
 
   yield takeEvery(types.INITIATE_FETCH_EARTHQUAKES, fetchEarthquakesSaga);
