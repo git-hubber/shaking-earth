@@ -10,6 +10,7 @@ import Map from '../../components/Map/Map';
 import Modal from '../../components/Modal/Modal';
 import SideBar from '../../components/SideBar/SideBar';
 import classes from './MainPage.module.scss';
+import * as types from '../../store/types.js';
 
 const MainPage = props => {
   // useEffect( ....,[]) Similar to ComponentDidMount class based lifecycle method, but for functional component. New 'hooks' in React.
@@ -43,7 +44,30 @@ const mapStateToProps = ({ earthquakes }) => ({
   filteredEarthquakes: earthquakes.filteredEarthquakes,
 });
 
+const mapDispatchToProps = dispatch => {
+  return {
+    /**
+     * Dispatch an action, INITIATE_FETCH_EARTHQUAKES, which is being watched for by the Saga middleware
+     *
+     */
+    fetchEarthquakes: () =>
+      dispatch({ type: types.INITIATE_FETCH_EARTHQUAKES }),
+    /**
+     * Dispatch an action, INITIATE_FILTER_EARTHQUAKES, which is being watched for by the Saga middleware
+     *
+     */
+    filterEarthquakes: bounds =>
+      dispatch({ type: types.INITIATE_FILTER_EARTHQUAKES, bounds }),
+    /**
+     * Regular syncrounous (non-api) actions
+     */
+    selectEarthquake: earthquake => {
+      dispatch(actions.selectEarthquake(earthquake));
+    },
+  };
+};
+
 export default connect(
   mapStateToProps,
-  actions
+  mapDispatchToProps
 )(MainPage);

@@ -1,5 +1,6 @@
 /**
  * Redux - Earthquake Reducer
+ *  No differences here when using Sagas vs Thunk
  */
 
 import * as types from '../types.js';
