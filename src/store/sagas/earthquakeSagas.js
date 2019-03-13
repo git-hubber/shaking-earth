@@ -1,3 +1,7 @@
+/**
+ * Side-effects (async code) goes here
+ */
+
 import { select, put } from 'redux-saga/effects';
 
 import * as types from '../types.js';
