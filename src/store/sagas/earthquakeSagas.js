@@ -12,7 +12,7 @@ export function* fetchEarthquakesSaga() {
   yield put({
     type: types.FETCH_EARTHQUAKES,
     earthquakes,
-  }); // Dispatch an action with payload (earthquakes)
+  }); // Dispatch a regular redux action with payload (earthquakes)
 }
 
 export function* filterEarthquakesSaga({ bounds }) {
@@ -36,5 +36,5 @@ export function* filterEarthquakesSaga({ bounds }) {
   yield put({
     type: types.FILTER_EARTHQUAKES,
     filteredEarthquakes,
-  }); // Dispatch an action with payload (filteredEarthquakes)
+  }); // Dispatch a regular redux action with payload (filteredEarthquakes)
 }
