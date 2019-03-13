@@ -1,4 +1,4 @@
-import { takeEvery } from 'redux-saga/effects';
+import { takeEvery, all } from 'redux-saga/effects';
 
 import * as types from '../types.js';
 import { fetchEarthquakesSaga, filterEarthquakesSaga } from './earthquakeSagas';
@@ -12,6 +12,8 @@ export function* watchEarthquakes() {
    * INITIATE_FILTER_EARTHQUAKES -> filterEarthquakesSaga
    *  */
 
-  yield takeEvery(types.INITIATE_FETCH_EARTHQUAKES, fetchEarthquakesSaga);
-  yield takeEvery(types.INITIATE_FILTER_EARTHQUAKES, filterEarthquakesSaga);
+  yield all([
+    takeEvery(types.INITIATE_FETCH_EARTHQUAKES, fetchEarthquakesSaga),
+    takeEvery(types.INITIATE_FILTER_EARTHQUAKES, filterEarthquakesSaga),
+  ]);
 }
