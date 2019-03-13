@@ -59,7 +59,7 @@ const mapDispatchToProps = dispatch => {
     filterEarthquakes: bounds =>
       dispatch({ type: types.INITIATE_FILTER_EARTHQUAKES, bounds }),
     /**
-     * Regular syncrounous (non-api) actions
+     * Dispath a regular syncrounous (non-api) redux action
      */
     selectEarthquake: earthquake => {
       dispatch(actions.selectEarthquake(earthquake));
