@@ -1,6 +1,6 @@
 /**
  * Redux - Earthquake Action Creators
- * Redux Saga: No side-effects in the action creators
+ * Redux Saga: No side-effects in the action creators (leaner action creators)
  */
 
 import * as types from '../types.js';
