@@ -53,7 +53,7 @@ const mapDispatchToProps = dispatch => {
     fetchEarthquakes: () =>
       dispatch({ type: types.INITIATE_FETCH_EARTHQUAKES }),
     /**
-     * Dispatch an action, INITIATE_FILTER_EARTHQUAKES, which is being watched for by the Saga middleware
+     * Dispatch an action, INITIATE_FILTER_EARTHQUAKES, with payload (bounds), which is being watched for by the Saga middleware
      *
      */
     filterEarthquakes: bounds =>
