@@ -5,7 +5,7 @@ import { fetchEarthquakesSaga, filterEarthquakesSaga } from './earthquakeSagas';
 
 export function* watchEarthquakes() {
   /**
-   * takeEvery - listen for certain action types -> do something when they occur:
+   * takeEvery - listen for certain action types -> and execute certain sagas when they occur:
    *
    * INITIATE_FETCH_EARTHQUAKES -> fetchEarthquakesSaga
    * OR
