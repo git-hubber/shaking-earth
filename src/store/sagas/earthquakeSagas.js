@@ -30,6 +30,6 @@ export function* filterEarthquakesSaga({ bounds }) {
 
   yield put({
     type: types.FILTER_EARTHQUAKES,
-    filteredEarthquakes, // Dispatch an action with payload (filteredEarthquakes)
-  });
+    filteredEarthquakes,
+  }); // Dispatch an action with payload (filteredEarthquakes)
 }
