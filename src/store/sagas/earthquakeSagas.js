@@ -18,6 +18,11 @@ export function* fetchEarthquakesSaga() {
 export function* filterEarthquakesSaga({ bounds }) {
   const { earthquakes } = yield select(); //get the application state
 
+  /**
+   * Do some magical earthquake filtering of allEarthquakes state,
+   * based upon the bounds that are passed in
+   */
+
   const filteredEarthquakes = yield earthquakes.allEarthquakes.filter(
     earthquake => {
       const point = {
